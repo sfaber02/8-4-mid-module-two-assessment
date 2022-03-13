@@ -58,7 +58,6 @@ function getAllMovieTitles(movies) {
  */
 function checkIfAnyMovieHasRating(movies, rating='G') {
   if (movies.length < 1) throw 'ERROR Movies Array Empty';
-  let found = false;
   return movies.some(movie => movie.rated === rating);
 }
 
